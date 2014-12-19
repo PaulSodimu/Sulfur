@@ -8,7 +8,7 @@
 <h2>How to use it</h2>
 
 <p>
-First download the package from nuget by running this command in package menager console.
+First download the package from nuget by running this command in package manager console.
 </p>
 
 <pre>Install-Package Sulfur</pre>
