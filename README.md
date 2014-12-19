@@ -5,20 +5,24 @@
   that follows the page object pattern. 
 </p>
 
-<h2>How to use it</h2>
+<h2>How to install it</h2>
 
 <p>
-First download the package from nuget by running this command in package manager console.
+You can add Sulfur to you project by running the nuget command in the package manager console.
 </p>
 
 <pre>Install-Package Sulfur</pre>
+
+<h2>How to use it</h2>
 
 <p>
 Once the installation has been completed three files will be added to your project.
 <ul>
   <li>An app.config file</li>
-  <li>A class called pages</li>
-  <li>A demo page called HomePage</li>
+  <li>A class called pages (in a folder called pages)</li>
+  <li>A demo page called HomePage (in a folder called pages)</li>
 </ul>
 </p>
+
+For each page in your system, you will need to create a new class for it that inherits from the Sulfur <pre>page</pre> base class.
 
