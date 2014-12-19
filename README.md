@@ -25,8 +25,8 @@ Once the installation has been completed three files will be added to your proje
 </p>
 
 For each page in your system, you will need to create a new class for it that inherits from the Sulfur page base class.
-<pre class="brush: c-sharp">
-  using Sulfur.Common;
+<pre>
+using Sulfur.Common;
 using System; 
 
 namespace TestSulfur.Pages
@@ -39,3 +39,27 @@ namespace TestSulfur.Pages
 }
 </pre>
 
+Once you have created your page, add a new property for it in the pages.cs class.
+
+<pre>
+using OpenQA.Selenium.Support.PageObjects;
+using Sulfur;
+using System;
+using System.Collections; 
+
+namespace TestSulfur.Pages
+{ 
+    public static class Pages
+    { 
+        public static HomePage HomePage
+        {
+            get
+            {
+                var homePage = new HomePage();
+                PageFactory.InitElements(Browser.Driver, homePage);
+                return homePage;
+            }
+        }
+    }
+}
+</pre>
