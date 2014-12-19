@@ -25,7 +25,7 @@ Once the installation has been completed three files will be added to your proje
 </p>
 
 For each page in your system, you will need to create a new class for it that inherits from the Sulfur page base class.
-<pre>
+<pre class="brush: c-sharp">
   using Sulfur.Common;
 using System; 
 
