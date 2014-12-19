@@ -14,6 +14,11 @@ First download the package from nuget by running this command in package manager
 <pre>Install-Package Sulfur</pre>
 
 <p>
-Once the installation has been completed. Create a new unit test project then copy the app.config file into the test project.
+Once the installation has been completed three files will be added to your project.
+<ul>
+  <li>An app.config file</li>
+  <li>A class called pages</li>
+  <li>A demo page called HomePage</li>
+</ul>
 </p>
 
