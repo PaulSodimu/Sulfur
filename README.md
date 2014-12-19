@@ -8,7 +8,7 @@
 <h2>How to install it</h2>
 
 <p>
-You can add Sulfur to you project by running the nuget command in the package manager console.
+You can add Sulfur to your project by running the nuget command in the package manager console.
 </p>
 
 <pre>Install-Package Sulfur</pre>
