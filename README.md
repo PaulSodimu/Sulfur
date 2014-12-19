@@ -24,5 +24,18 @@ Once the installation has been completed three files will be added to your proje
 </ul>
 </p>
 
-For each page in your system, you will need to create a new class for it that inherits from the Sulfur <pre>page</pre> base class.
+For each page in your system, you will need to create a new class for it that inherits from the Sulfur page base class.
+<pre>
+  using Sulfur.Common;
+using System; 
+
+namespace TestSulfur.Pages
+{
+    //All pages should inherit from the page base class
+    public class HomePage : Page
+    {
+         
+    }
+}
+</pre>
 
