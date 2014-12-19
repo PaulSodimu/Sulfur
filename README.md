@@ -66,8 +66,7 @@ namespace TestSulfur.Pages
 
 <p>Now we can setup the tests. Create a new unit test project then add a reference to the sulfur library and your framework project. Copy the app.config file into the test project then open it to edit.<br /> In the appSettings section, set the errorCaptureLocation value to a location you want error screenshots to be saved to. Also choose the browser you want to use for your tests by uncommenting the appropriate line.
 </p>
-<pre>
-<?xml version="1.0" encoding="utf-8" ?>
+```xml
   <appSettings>
 
     <add key="ErrorCaptureLocation" value="C:\Temp\"/>
@@ -79,13 +78,13 @@ namespace TestSulfur.Pages
     <!--<add key="Browser" value="OpenQA.Selenium.IE.InternetExplorerDriver"/>-->
 
   </appSettings>
-</pre>
+```
 
 <p>
   In the environments section, you need to add a new element to the environment element for each page you have. The name of the element must be the same as the name of the page object. You must also add a url for the page and a page title.
 </p>
 
-<pre>
+```xml
   <Environments>
 
     <!--Prod-->
@@ -94,7 +93,7 @@ namespace TestSulfur.Pages
     </Environment> 
 
   </Environments>
-</pre>
+```
 
 <p>
 Finally we can write tests. Create a new unit test class. The Sulfur Browser class gives you access to the browser and some methods to control it. The Pages class will give acess to the pages of your system.
