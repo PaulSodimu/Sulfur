@@ -53,7 +53,16 @@ namespace Sulfur.Common
         {
             var wait = Browser.Wait();
 
-            wait.Until(e => e.FindElement(elementDesc));
+            try
+            {
+                wait.Until(e => e.FindElement(elementDesc));
+            }
+            catch (Exception)
+            {
+                Console.WriteLine(e.Message);
+                TakeScreenshot();
+                throw;
+            }
         }
 
         /// <summary>
@@ -192,6 +201,10 @@ namespace Sulfur.Common
             return elements;
         }
 
+        /// <summary>
+        /// Changes the page focus to the specified element
+        /// </summary>
+        /// <param name="element">The element to focus on.</param>
         internal static void FocusOn(IWebElement element)
         {
             new Actions(Browser.getDriver).MoveToElement(element);

@@ -126,12 +126,16 @@ namespace Sulfur
 
         }
 
+        /// <summary>
+        /// Checks if the browser has more than one window open
+        /// </summary>
+        /// <returns></returns>
         public static bool HasNewWindow()
         {
+            //TODO: Rename method or refacor
             return WebDriver.WindowHandles.Count > 1;
         }
-
-
+         
         public static IWebDriver GetNewWindow()
         {
             string parentWindow = WebDriver.CurrentWindowHandle;
@@ -153,29 +157,34 @@ namespace Sulfur
             return null;
         }
 
+        #region Delete???
+        [Obsolete]
         public static void GetCurrentWindow()
         {
-
+            //TODO: ???
             ReadOnlyCollection<string> windowHandles = WebDriver.WindowHandles;
             WebDriver.SwitchTo().Window(windowHandles[0]);
         }
 
+        [Obsolete]
         public static IWebDriver GetIFrame(IWebDriver window)
         {
+            //TODO: ???
             return window.SwitchTo().Frame(0);
         }
 
-
+        [Obsolete]
         public static void CloseNewWindow()
         {
             if (!HasNewWindow()) return;
-
         }
 
+        [Obsolete]
         public static void CloseNewWindow(IWebDriver window)
         {
             window.Close();
-        }
+        } 
+        #endregion
 
     }
 }
