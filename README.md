@@ -11,7 +11,7 @@
 You can add Sulfur to your project by running the nuget command in the package manager console.
 </p>
 
-<pre>Install-Package Sulfur</pre>
+<pre>Install-Package Sulfur -Pre</pre>
 
 <h2>How to use it</h2>
 
