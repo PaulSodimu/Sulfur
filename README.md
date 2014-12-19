@@ -1,7 +1,7 @@
 <h1>Sulfur</h1>
 
 <p>
-  A <a href="http://docs.seleniumhq.org/projects/webdriver/">Selenium Webdriver</a> wrapper that will help you to build an automated testing framework 
+  A <a href="http://docs.seleniumhq.org/projects/webdriver/" target="_blank">Selenium Webdriver</a> wrapper that will help you to build an automated testing framework 
   that follows the page object pattern. 
 </p>
 
