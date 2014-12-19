@@ -67,6 +67,7 @@ namespace TestSulfur.Pages
 <p>Now we can setup the tests. Create a new unit test project then add a reference to the sulfur library and your framework project. Copy the app.config file into the test project then open it to edit.<br /> In the appSettings section, set the errorCaptureLocation value to a location you want error screenshots to be saved to. Also choose the browser you want to use for your tests by uncommenting the appropriate line.
 </p>
 <pre>
+<?xml version="1.0" encoding="utf-8" ?>
   <appSettings>
 
     <add key="ErrorCaptureLocation" value="C:\Temp\"/>
